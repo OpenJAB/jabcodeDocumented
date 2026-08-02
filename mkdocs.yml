@@ -2,26 +2,26 @@ site_name: JabcodeDocumented
 
 theme:
   name: material
-  logo: images/icon.png
-  favicon: images/icon.png
+  logo: assets/images/icon.png
+  favicon: assets/images/icon.png
   icon:
     repo: fontawesome/brands/github
   palette:
-    primary: amber
-    accent: deepOrange
+    primary: indigo
+    accent: lightBlue
   features:
+    - navigation.indexes
     - navigation.instant
     - navigation.instant.preview
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.path
-    - navigation.footer
     - content.code.copy
     - content.tabs.link
     - content.footnote.tooltips
-repo_url: https://github.com/EinfachnurJuls/jabcodeDocumented
-repo_name: EinfachnurJuls/jabcodeDocumented
+repo_url: https://github.com/OpenJAB/jabcodeDocumented
+repo_name: OpenJAB/jabcodeDocumented
 copyright: All rights to the Jabcode logo, assets and ideas belong to the original project authors.<br>Right to use the contents is granted through its MIT License. Copyright to this docs remains.
 extra:
   generator: false
@@ -61,5 +61,8 @@ markdown_extensions:
       generic: true
 
 extra_javascript:
-  - javascripts/mathjax.js
+  - assets/javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - assets/stylesheets/badges.css
