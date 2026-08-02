@@ -1,0 +1,65 @@
+site_name: JabcodeDocumented
+
+theme:
+  name: material
+  logo: images/icon.png
+  favicon: images/icon.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: amber
+    accent: deepOrange
+  features:
+    - navigation.instant
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.footer
+    - content.code.copy
+    - content.tabs.link
+    - content.footnote.tooltips
+repo_url: https://github.com/EinfachnurJuls/jabcodeDocumented
+repo_name: EinfachnurJuls/jabcodeDocumented
+copyright: All rights to the Jabcode logo, assets and ideas belong to the original project authors.<br>Right to use the contents is granted through its MIT License. Copyright to this docs remains.
+extra:
+  generator: false
+
+plugins:
+  - search
+  - offline
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+  - tables
+  - footnotes
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+    
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
