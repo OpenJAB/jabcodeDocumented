@@ -2,6 +2,8 @@ venv   := ".venv"
 pip    := ".venv/Scripts/pip"
 mkdocs := ".venv/Scripts/mkdocs"
 
+default: init run
+
 # create .venv and install dependencies
 init:
     python -m venv {{venv}}

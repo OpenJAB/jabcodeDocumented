@@ -24,6 +24,16 @@ While the color number is accepted to be a power of 2 by most of the code, reali
 
 <span class="mdx-badge"><span class="mdx-badge__icon"><span class="twemoji"><img src="/assets/icons/kind.svg" alt=""></span></span><span class="mdx-badge__text">*define*</span></span> <span class="mdx-badge"><span class="mdx-badge__icon"><span class="twemoji"><img src="/assets/icons/constant.svg" alt=""></span></span><span class="mdx-badge__text">6</span></span>
 
+The mode order is defined [as follows](https://github.com/OpenJAB/jabcode/blob/master/src/jabcode/encoder.h#L197):
+
+1. Uppercase
+2. Lowercase
+3. Numeric
+4. Punctuation
+5. Mixed
+6. Alphanumeric
+7. Bytes
+
 > TODO: Clarify what this constant is used for in the codebase.
 
 ## `ENC_MAX`
